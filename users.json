@@ -1,0 +1,57 @@
+/* 
+ this was the initial json file to load in the database
+ The database was earlier looking like this.
+ now it is modified to new users data.
+ original REFERENCE : https://github.com/passport/express-4.x-local-example
+ modified database REFERENCE : https://neha-gadge-database.firebaseio.com/
+ It has new names of Anup Holey, Snehal, Neha Gadge and Pravallika Kavikondala
+
+*/
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "jack",
+            "password": "secret",
+            "displayName": "Jack",
+            "emails": [
+                {
+                    "value": "jack@example.com"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "username": "jill",
+            "password": "birthday",
+            "displayName": "Jill",
+            "emails": [
+                {
+                    "value": "jill@example.com"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "username": "neha",
+            "password": "nehagadge",
+            "displayName": "Neha Gadge",
+            "emails": [
+                {
+                    "value": "neha@example.com"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "username": "pravallika",
+            "password": "pkondala",
+            "displayName": "Pravallika Kavikondala",
+            "emails": [
+                {
+                    "value": "pravallika@example.com"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+<!-- This is the page which displays all the existing floorplans for our apartment.
+	Images for this page are taken from the website: http://gh.chnw.org/property/goose-hollow-plaza/floor-plans/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<style type="text/css">
+			.navbar {
+				margin-bottom:20px;
+				margin-top: 0px;
+				margin-left: 100px;
+				margin-right: 150px;
+				padding-top: 3px;
+				padding-bottom: 0px;
+				background: transparent;
+				
+			}
+			.li {
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				font-size: 1em;
+				font-weight: bold;
+			}
+
+			.containe<div class="twelve columns alpha">r
+			{
+				margin-left: 100px;
+				margin-right: 150px;
+			}
+
+			body
+			{
+				background-image: url("images/blue.jpg");
+				height: 100%; 
+				background-position:center;
+				width: 100%;
+				font-family: "Trebuchet MS", Helvetica, sans-serif
+			}
+		</style>
+	</head>
+	<body>
+		
+<!-- company logo 
+	logo created from: https://hatchful.shopify.com/ 
+	formatting REFERENCE: https://getbootstrap.com/-->
+		<div class="text-center">
+    		<a href='/home.html'>
+			<img height=150px src= 'images/logo_transparent.png'></i></a>
+		</div>
+
+
+<!-- navigation bar 
+navbar REFERENCE : https://github.com/sniklaus/teaching-webdev/blob/master/bootstrap/1-navbar.html-->
+		<nav class="navbar navbar-expand-md navbar-light bg-transparent">
+			<div class="navbar-collapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="li nav-item"><a class="nav-link" href="/home.html">HOME</a></li>
+					<li class="li nav-item active"><a class="nav-link" href="/floorplans.html">FLOORPLANS</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/amenities.html">AMENITIES</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/gallery.html">GALLERY</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/location.html">LOCATION</a></li>
+				</ul>
+			</div>
+		</nav>
+
+<!-- Floorplans. REFERENCE : http://gh.chnw.org/property/goose-hollow-plaza/floor-plans/
+				formatting REFERENCE:	https://getbootstrap.com/
+ -->
+			<div class="container">
+			<div class="row content">	
+				<div class="col-md-4">
+					<div class="text-center">
+					<h5>1 Bedroom</h5>
+				</div>
+					<img height=400px src="images/1bed.png">
+					</div>
+				
+					 <div class="col-md-4"><div class="text-center">
+          			<h5>2 Bedroom</h5></div>
+					<img height=400px src="images/2bed.png">
+					</div>
+				
+					<div class="col-md-4"><div class="text-center">
+         			<h5>Studio</h5></div>
+					<img height=400px src="images/studio.png">
+					</div>
+		</div>
+		</body>
+</html>

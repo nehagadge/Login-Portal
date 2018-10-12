@@ -1,0 +1,94 @@
+<!--
+ This is the basic contact page which will provide contact details for our apartment.
+ Also, it has an embeded google map which displays exact location of apartments in google map.
+ The contact details displayed on this page are taken from : http://gh.chnw.org/contact-us/ 
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<style type="text/css">
+			.navbar {
+				margin-bottom:20px;
+				margin-top: 0px;
+				margin-left: 100px;
+				margin-right: 150px;
+				padding-top: 3px;
+				padding-bottom: 0px;
+				border: rebeccapurple;
+				
+			}
+			.li {
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				font-size: 1em;
+				font-weight: bold;
+			}
+
+			.container
+			{
+				margin-left: 100px;
+				margin-right: 150px;
+			}
+            
+            body
+			{
+				background-image: url("images/blue.jpg");
+				height: 100%; 
+				background-position:center;
+				width: 100%;
+				font-family: "Trebuchet MS", Helvetica, sans-serif
+			}
+		</style>
+	</head>
+
+<!--company logo-->
+	<body background="white.jpg">
+		<div class="text-center">
+    		<a href='/home.ejs'>
+			<img height=150px src= 'images/logo_transparent.png'></i></a>
+		</div>
+
+<!--navbar design-->
+		<nav class="navbar navbar-expand-md navbar-light bg-transparent">
+			<div class="navbar-collapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="li nav-item"><a class="nav-link" href="/home.html">HOME</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/floorplans.html">FLOORPLANS</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/amenities.html">AMENITIES</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/gallery.html">GALLERY</a></li>
+          <li class="li nav-item active"><a class="nav-link" href="/location.html">LOCATION</a></li>
+					</ul>
+          		</li>
+				</ul>
+			</div>
+		</nav>
+
+<!-- REFERENCE : http://gh.chnw.org/contact-us/
+formatting reference: https://getbootstrap.com/
+	-->
+
+
+<div class="container">
+		<div class="modal-body row">
+				<div class="col-md-6" style="font-family:'Trebuchet MS'; font-size: 20px;">
+					<h4> CONTACT US</h4>
+					<table> <tr> <td style="width: 10rem;"> LOCATION </td> <td>1604 SW Clay Street Portland, OR 97201	</td></tr>
+						<tr><td>        </td></tr>
+						<tr><td>OFFICE HOURS</td><td> Mon – Fri: 10am – 6pm</td></tr>
+						<tr><td>OFFICE PHONE</td><td>(503) 345-4111</td></tr></table>
+						
+					</div>
+			<div class="col-md-6" style="font-family:'Trebuchet MS'; font-size: 20px;">	
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.6961891165092!2d-122.6936308849262!3d45.516194137994425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950a1910befb17%3A0x859d4734bfb9200c!2sCollege+Housing+Northwest!5e0!3m2!1sen!2sus!4v1532817339525" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+		</div>
+		</div>
+	</body>
+</html>

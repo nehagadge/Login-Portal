@@ -1,0 +1,161 @@
+<!-- This page has the basic html form for new user registration
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<title> Application</title>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+		<script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+		<script>
+
+  /*Initialize Firebase
+   REFERENCES : http://mariechatfield.com/tutorials/firebase/step4.html
+ 				https://firebase.google.com/docs/web/setup
+ */
+
+  var config = {
+    apiKey: "AIzaSyC1yN49tT12sbESftaOAvb5FNQL6o1JYHk",
+    authDomain: "neha-gadge-database.firebaseapp.com",
+    databaseURL: "https://neha-gadge-database.firebaseio.com",
+    projectId: "neha-gadge-database",
+    storageBucket: "neha-gadge-database.appspot.com",
+    messagingSenderId: "595583846697"
+  };
+  firebase.initializeApp(config);
+</script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script type="text/javascript" src="apply.js"></script>
+		
+		<style type="text/css">
+			.navbar {
+				margin-bottom:20px;
+				margin-top: 0px;
+				padding-top: 3px;
+				padding-bottom: 0px;
+				
+			}
+			.li {
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				font-size: 1em;
+				font-weight:bold;
+			}
+
+			.container
+			{
+				margin-left: 100px;
+				margin-right: 100px;
+			}
+
+			.card-header
+			{
+				font-family: Impact, sans-serif;
+				font-size: 1.5em;
+			}
+			
+			body
+			{
+				background-image: url("images/blue.png");
+				height: 100%; 
+				background-position:center;
+				width: 100%;
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				font-size: 16px;
+			}
+		</style>
+	</head>
+
+<!--body design-->
+	<body>
+
+			<script type="text/javascript" src="apply.js"></script>
+
+
+<!--company logo--
+	logo created from: https://hatchful.shopify.com/ -->
+		<div class="text-center">
+    		<a href='\home.ejs'>
+			<img height=150px src= 'images/logo_transparent.png'></i></a>
+		</div>
+
+
+<!--navigation bar
+navbar REFERENCE : https://github.com/sniklaus/teaching-webdev/blob/master/bootstrap/1-navbar.html-->
+		<div class="container">
+		<nav class="navbar navbar-expand-md navbar-light bg-transparent">
+			<div class="navbar-collapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="li nav-item"><a class="nav-link" href="/home.ejs">HOME</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/floorplans.html">FLOORPLANS</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/amenities.html">AMENITIES</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/gallery.html">GALLERY</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/location.html">CONTACT US</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+
+<!--left hand side of window
+formatting REFERENCE: https://getbootstrap.com/
+	-->
+
+
+		<div class="container">
+
+			<div class="modal-body row">
+				<div class="col-md-6">
+			Apply Online Now
+			<ul>
+				<li>100% safe and secure</li>
+				<li>Thousands apply online every day</li>
+				<li>Get the apartment you want right away</li>
+			</ul>
+			<hr>
+			Have Questions? <br>
+			Call me at 916-286-1551
+		</div>
+
+<!--right hand side of window. this has the application form
+formatting REFERENCE: https://getbootstrap.com/-->
+		<div class="col-md-6">
+			<div class="card">
+					<div class="card-header" style="background: #7C22B0; color: whitesmoke"> Start Your Application  </div>
+  					<div class="card-body">
+							<form action="/apply" method="post" id="applicationform">
+					<div class="form-group">
+      						<input type="text" class="form-control" placeholder="fullname" name="displayname" id="displayname">
+    				</div>
+					<div class="form-group">
+    					<input type="email" class="form-control" placeholder="username@example.com" name="email" id="email">
+					 </div>
+					 <div class="form-group">
+    					<input type="text" class="form-control" placeholder="username" name="username" id="username">
+     				</div>
+    				<div class="form-group">
+    					<input type="password" class="form-control" placeholder="password" name="password" id="password"> 
+					</div>
+					<div class="form-group">
+							<input type="text" class="form-control" placeholder="government id" name="id" id="id">
+					</div>
+	
+					<input type="submit" class="btn btn-secondary btn-sm" value="CREATE ACCOUNT"></input><br><br>
+				</form>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+</div>
+		</body>
+</html>

@@ -1,0 +1,124 @@
+<!-- 
+  This is the gallary of our apartment which displays photos of apartments in a corousal.
+  Images for the gallary page are taken from the website : http://gh.chnw.org/property/goose-hollow-plaza/gallery/ 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+        <style type="text/css">
+            .navbar {
+                margin-bottom:20px;
+                margin-top: 0px;
+                margin-left: 100px;
+                margin-right: 150px;
+                padding-top: 3px;
+                padding-bottom: 0px;
+                
+            }
+            .li {
+                font-family: "Trebuchet MS", Helvetica, sans-serif;
+                font-size: 1em;
+                font-weight: bold;
+            }
+
+            .container
+            {
+                margin-left: 100px;
+                margin-right: 150px;
+            }
+
+            
+            body
+			{
+				background-image: url("images/blue.png");
+				height: 100%; 
+				background-position:center;
+				width: 100%;
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+                font-size: 16px;
+			}
+        </style>
+    </head>
+    <body>
+
+<!-- company logo 
+  logo created from: https://hatchful.shopify.com/ -->
+        <div class="text-center">
+            <a href='/home.ejs'>
+            <img height=150px src= 'images/logo_transparent.png'></i></a>
+        </div>
+
+
+<!-- navigation bar
+navbar REFERENCE : https://github.com/sniklaus/teaching-webdev/blob/master/bootstrap/1-navbar.html-->
+        <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+            <div class="navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="li nav-item"><a class="nav-link" href="/home.html">HOME</a></li>
+                    <li class="li nav-item"><a class="nav-link" href="/floorplans.html">FLOORPLANS</a></li>
+                    <li class="li nav-item"><a class="nav-link" href="/amenities.html">AMENITIES</a></li>
+                    <li class="li nav-item active"><a class="nav-link" href="/gallery.html">GALLERY</a></li>
+          <li class="li nav-item"><a class="nav-link" href="/location.html">CONTACT US</a></li>
+                    </ul>
+            </div>
+        </nav>
+
+<!-- corousal to display all photos of apartment
+ photos REFERENCE : http://gh.chnw.org/property/goose-hollow-plaza/gallery/ 
+ formatting REFERENCE: https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+-->
+<center>
+<div class="container" style="margin-top: 30px;  margin-left: 100px; margin-right:150px; height: 50%; width: 80%">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/gallary1.jpg" alt="first" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/gallary2.jpg" alt="second" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="images/gallary3.jpg" alt="third" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/gallary4.jpg" alt="fourth" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/gallary5.jpg" alt="fifth" style="width:100%;">
+      </div>
+    </div>
+    
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+</body>
+</html>

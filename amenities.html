@@ -1,0 +1,136 @@
+<!-- This page dispayes the basic aminities provided.
+References for aminities are taken from : http://gh.chnw.org/property/goose-hollow-plaza/more-info-1/-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<style type="text/css">
+			.navbar {
+				margin-bottom:20px;
+				margin-top: 0px;
+				margin-left: 100px;
+				margin-right: 150px;
+				padding-top: 3px;
+				padding-bottom: 0px;
+				
+			}
+			.li {
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				font-size: 1em;
+				font-weight: bold;
+			}
+
+			.container
+			{
+				margin-left: 100px;
+				margin-right: 150px;
+			}
+
+			table, th, td 
+			{
+    			border: 1px solid black;
+			}
+
+			body
+			{
+				background-image: url("images/blue.jpg");
+				height: 100%; 
+				background-position:center;
+				width: 100%;
+				font-family: "Trebuchet MS", Helvetica, sans-serif
+			}
+		</style>
+	</head>
+	<body>
+
+
+<!-- code to display the website logo 
+	logo created from: https://hatchful.shopify.com/-->
+		<div class="text-center">
+    		<a href='/home.ejs'>
+			<img height=150px src= 'images/logo_transparent.png' style= background: trasparent></i></a>
+		</div>
+
+<!-- code to display navbar 
+     navbar reference : https://github.com/sniklaus/teaching-webdev/blob/master/bootstrap/1-navbar.html-->
+		<nav class="navbar navbar-expand-md navbar-light bg-transparent">
+			<div class="navbar-collapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="li nav-item"><a class="nav-link" href="/home.html">HOME</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/floorplans.html">FLOORPLANS</a></li>
+					<li class="li nav-item active"><a class="nav-link" href="/amenities.html">AMENITIES</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/gallery.html">GALLERY</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/location.html">LOCATION</a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+<!-- code to display aminities provided
+	The aminities are divided in three columns
+	Community aminities, apartment aminities, Pet polocies
+	Refernce for actual available aminities is taken from: http://gh.chnw.org/property/goose-hollow-plaza/more-info-1/ 
+	formatting reference: https://getbootstrap.com/
+	-->
+			<div class="container">
+			<div class="row">
+<div class="container">
+	<center>	
+	<div class="row content" style="margin-left: 20%; margin-right: -30%">	
+			
+			
+			<div class="col-md-4">
+				<div class="text-center">
+						<h2>Community Amenities</h2>
+						<br>Controlled Access Community
+						<br>Staff On-Call 24 Hours
+						<br>Close to Public Transit
+						<br>Free Shuttle to PSU, PNCA, AI, and Kaplan
+						<br>Bike Parking Available
+						<br>Garage Parking
+						<br>Street Parking Available
+						<br>Fitness Center
+						<br>Laundry Facilities
+						<br>Courtyard
+						<br>Elevators
+						<br>On-Site Management
+						<br>On-Site Maintenance
+						<br>Package Receiving
+					</div>
+				</div>
+			
+				 <div class="col-md-4"><div class="text-center">
+						<h2>Apartment Amenities</h2>
+						<br>6, 9, and 12 Month Lease Options
+						<br>Water, Sewer, and Garbage Included in Rent
+						<br>Bike Hooks in Units
+						<br>Balconies on Most Units
+						<br>Affordable Wi-Fi Available
+						<br>Cable Ready
+						<br>Dishwasher
+						<br>Refrigerator
+						<br>Stove
+						<br>Carpeted Floors
+						<br>Furnished units available
+				 </div>
+				 </div>
+			
+				<div class="col-md-4"><div class="text-center">
+						<h2>Pet Policy</h2><br> 
+						<br>Cats Allowed. No Dogs.</li>
+						<br>$200 Refundable Deposit.
+				</div>	</div>
+				</div>
+				</div>
+
+</body>
+</html>

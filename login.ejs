@@ -1,0 +1,96 @@
+<!-- 
+ This is the login page from where user authentication is done
+ On successful authentication, the control goes to display homepage from where profile can be seen.
+ Else, the control stays on login page.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<style type="text/css">
+			.navbar {
+				margin-bottom:20px;
+				margin-top: 0px;
+				margin-left: 100px;
+				margin-right: 150px;
+				padding-top: 3px;
+				padding-bottom: 0px;
+				background: transparent;
+				
+			}
+			.li {
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				font-size: 1em;
+				font-weight: bold;
+			}
+
+			.containe<div class="twelve columns alpha">r
+			{
+				margin-left: 100px;
+				margin-right: 150px;
+			}
+
+			body
+			{
+				background-image: url("images/blue.jpg");
+				height: 100%; 
+				background-position:center;
+				width: 100%;
+				font-family: "Trebuchet MS", Helvetica, sans-serif
+			}
+		</style>
+	</head>
+	<body>
+
+<!-- Company logo 
+	logo created from: https://hatchful.shopify.com/ -->
+
+		<div class="text-center">
+    		<a href='/home.html'>
+			<img height=150px src= 'images//logo_transparent.png'></i></a>
+		</div>
+
+<!-- Navigation bar 
+navbar REFERENCE : https://github.com/sniklaus/teaching-webdev/blob/master/bootstrap/1-navbar.html-->
+		<nav class="navbar navbar-expand-md navbar-light">
+			<div class="navbar-collapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="li nav-item"><a class="nav-link" href="/home.html">HOME</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/floorplans.html">FLOORPLANS</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/amenities.html">AMENITIES</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/gallery.html">GALLERY</a></li>
+					<li class="li nav-item"><a class="nav-link" href="/location.html">LOCATION</a></li>
+				</ul>
+			</div>
+		</nav>
+
+<!--Login Form
+formatting REFERENCE: https://getbootstrap.com-->
+	<div class = "container">
+		<center>
+				<ul class="grid effect-3" id="grid">
+						<div class="card" style="width: 25rem;">
+  				<div class="card-header" style="background: #7C22B0; color: whitesmoke"> WELCOME TO RESIDENT SERVICES </div>
+  					<div class="card-body">
+						<form action="/login" method="post">
+					<div class="form-group"> Username <br>
+    					<input class="form-control input-sm" type="text" name="username">
+     				</div>
+    				<div class="form-group">Password <br>
+    					<input type="password" class="form-control input-sm" name="password"> 
+    				</div>
+  					<input type="submit" class="btn btn-secondary btn-sm" value="SIGN IN"></input><br><br>
+  					<a href="/apply.html"> Forgot Password?
+  					<br> Click here to register</a><br>
+				</form>
+			</ul>
+		</div>
+	</center> 
+</div>
+</body>
+</html>

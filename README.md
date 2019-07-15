@@ -19,7 +19,7 @@ Start the server.
 ```bash
 $ node server.js
 ```
-
+Set-up a firebase database account at: https://firebase.google.com/
 Open a web browser and navigate to [http://localhost:8081/](http://127.0.0.1:8081/)
 to see the example in action.  Log in using username `neha` and password `nehagadge`
 
